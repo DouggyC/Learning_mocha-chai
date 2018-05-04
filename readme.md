@@ -1,37 +1,46 @@
-1. npm i mocha chai --save-dev
-  - 1a. package.json > add mocha scripts > "test": "mocha"
+### Mocha + Chai testing
 
-2. mkdir test
-  - mocha looks for tests in default test folder
+>
 
-3. touch testFile.js
 
-  4. - Require Chai asserts: const assert = require('chai').assert;
+#### Build steps
+1. `npm i mocha chai --save-dev`
 
-  5. - Require app.js: const app = require('../app');
+2. add mocha scripts in package.json
+```
+"scripts": {
+      "test": "mocha || true"
+    },
+```
 
-  6. Create a test
-    - describe('testName', function() {
-          it('test message', function(){
-            assert.equal(testFunction(), 'return result')
-          })
-      })
+3. mkdir test - *mocha looks for tests in default test folder*
 
-7. - Run test: npm run test
+4. touch testFile.js
+  - Require Chai asserts: `const assert = require('chai').assert;`
+  - Require app.js: `const app = require('../app');`
+
+5. Write a Test
+```
+describe('testName', function() {
+      it('test message', function(){
+        assert.equal(testFunction(), 'return result')
+      });
+  });
+```
+5. Run test: `npm run test`
 
 ![alt text](https://github.com/DouggyC/Learning_mocha-chai/blob/master/mocha_chai.png)
 
 
-##### mocha usage
-npm run test -s : disable test fail error messages.
+### mocha usage
+`npm run test -s` : disable test fail error messages.
 
-"test": "mocha || true" : auto disable in package.json
+`"test": "mocha || true"` : auto disable in package.json
 
 
 
-##### mocha
+#### mocha
 http://www.mochajs.com/
 
-
-##### chai assertion library
+#### chai assertion library
 http://www.chaijs.com/api/assert/
