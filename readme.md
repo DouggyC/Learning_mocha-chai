@@ -23,7 +23,8 @@
 
 
 ##### mocha usage
-npm run test -s : disable test fail error messages
+npm run test -s : disable test fail error messages.
+
 "test": "mocha || true" : auto disable in package.json
 
 
