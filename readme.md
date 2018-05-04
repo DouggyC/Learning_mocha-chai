@@ -19,7 +19,7 @@
 
 7. - Run test: npm run test
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/DouggyC/Learning_mocha-chai/blob/master/mocha_chai.png)
 
 
 ##### mocha usage
